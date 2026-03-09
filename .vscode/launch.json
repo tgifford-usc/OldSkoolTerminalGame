@@ -5,7 +5,8 @@
       "name": "▶ Run Terminal Game",
       "type": "node-terminal",
       "request": "launch",
-      "command": "g++ -std=c++17 -Wall -Wextra src/*.cpp src/*/*.cpp -Iinclude -o game && ./game"
+      "command": "g++ -std=c++17 -Wall -Wextra src/*.cpp src/*/*.cpp -Iinclude -o game && ./game",
+      "internalConsoleOptions": "neverOpen"
     }
   ]
 }
