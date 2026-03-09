@@ -2,16 +2,12 @@
   "version": "2.0.0",
   "tasks": [
     {
-      "label": "Build and Run TerminalGame",
+      "label": "build-terminalgame",
       "type": "shell",
-      "command": "g++ -std=c++17 main.cpp Terminal.cpp Cartridge.cpp TerminalCartridge.cpp -o game && ./game",
+      "command": "g++ -std=c++17 src/*.cpp src/*/*.cpp -Iinclude -o game",
       "group": {
         "kind": "build",
         "isDefault": true
-      },
-      "presentation": {
-        "reveal": "always",
-        "panel": "shared"
       },
       "problemMatcher": "$gcc"
     }
