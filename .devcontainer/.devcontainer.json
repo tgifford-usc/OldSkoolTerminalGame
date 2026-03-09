@@ -2,6 +2,12 @@
   "name": "OldSkoolTerminalGame",
   "image": "mcr.microsoft.com/devcontainers/cpp:1-debian-12",
   "customizations": {
+    "codespaces": {
+      "openFiles": [
+        "src/TerminalCartridge.cpp",
+        "include/TerminalCartridge.h"
+      ]
+    },
     "vscode": {
       "extensions": [
         "ms-vscode.cpptools"
@@ -13,12 +19,6 @@
         },
         "terminal.integrated.defaultLocation": "editor"
       }
-    },
-    "codespaces": {
-      "openFiles": [
-        "src/TerminalCartridge.cpp",
-        "include/TerminalCartridge.h"
-      ]
     }
   },
   "postAttachCommand": "bash .devcontainer/welcome.sh"
