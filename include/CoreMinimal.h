@@ -103,18 +103,24 @@ public:
     {
         va_list Args1;
         va_start(Args1, Format);
+
         va_list Args2;
         va_copy(Args2, Args1);
+
         const int Length = std::vsnprintf(nullptr, 0, Format, Args1);
         va_end(Args1);
+
         if (Length < 0)
         {
             va_end(Args2);
             return FString("");
         }
-        std::string Buffer(static_cast<std::size_t>(Length), '\0');
-        std::vsnprintf(Buffer.data(), Buffer.size() + 1, Format, Args2);
+
+        std::string Buffer(static_cast<std::size_t>(Length) + 1, '\0');
+        std::vsnprintf(&Buffer[0], Buffer.size(), Format, Args2);
         va_end(Args2);
+
+        Buffer.resize(static_cast<std::size_t>(Length));
         return FString(std::move(Buffer));
     }
 

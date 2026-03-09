@@ -1,0 +1,55 @@
+# =========================
+# Visual Studio
+# =========================
+
+.vs/
+*.VC.db
+*.VC.opendb
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# =========================
+# Build output
+# =========================
+
+[Bb]uild/
+[Bb]in/
+[Oo]bj/
+x64/
+x86/
+Debug/
+Release/
+
+*.log
+*.tlog
+*.lastbuildstate
+
+# =========================
+# CMake (if you still use it locally)
+# =========================
+
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+build/
+
+# =========================
+# Compiled files
+# =========================
+
+*.exe
+*.dll
+*.pdb
+*.lib
+*.obj
+*.idb
+*.ilk
+
+# =========================
+# OS junk
+# =========================
+
+.DS_Store
+Thumbs.db
