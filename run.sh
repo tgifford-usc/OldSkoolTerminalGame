@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 set -e
-g++ -std=c++17 main.cpp Terminal.cpp Cartridge.cpp TerminalCartridge.cpp -o game
+g++ -std=c++17 -Wall -Wextra src/*.cpp src/Console/*.cpp -Iinclude -o game
 ./game
