@@ -1,0 +1,17 @@
+{
+  "name": "OldSkoolTerminalGame",
+  "image": "mcr.microsoft.com/devcontainers/cpp:1-debian-12",
+  "customizations": {
+    "vscode": {
+      "settings": {
+        "files.associations": {
+          "*.h": "cpp"
+        }
+      },
+      "extensions": [
+        "ms-vscode.cpptools"
+      ]
+    }
+  },
+  "postCreateCommand": "g++ --version"
+}
