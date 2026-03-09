@@ -1,3 +1,7 @@
 {
-  "debug.onTaskErrors": "showErrors"
+  "workbench.startupEditor": "none",
+  "files.associations": {
+    "*.h": "cpp"
+  },
+  "terminal.integrated.defaultLocation": "editor"
 }

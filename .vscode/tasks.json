@@ -2,12 +2,22 @@
   "version": "2.0.0",
   "tasks": [
     {
-      "label": "build-terminalgame",
+      "label": "▶ Run Terminal Game",
       "type": "shell",
-      "command": "g++ -std=c++17 src/*.cpp src/*/*.cpp -Iinclude -o game",
+      "command": "bash",
+      "args": [
+        "-c",
+        "rm -f game && g++ -std=c++17 -Wall -Wextra src/*.cpp src/*/*.cpp -Iinclude -o game && ./game"
+      ],
       "group": {
         "kind": "build",
         "isDefault": true
+      },
+      "presentation": {
+        "reveal": "always",
+        "panel": "shared",
+        "focus": true,
+        "clear": true
       },
       "problemMatcher": "$gcc"
     }
