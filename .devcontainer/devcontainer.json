@@ -20,6 +20,5 @@
         "terminal.integrated.defaultLocation": "editor"
       }
     }
-  },
-  "postAttachCommand": "bash .devcontainer/welcome.sh"
+  }
 }
