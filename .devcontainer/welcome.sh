@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 
 pkill -f "^.*/game$" 2>/dev/null || true
+sleep 1
 clear
 
 echo "======================================"

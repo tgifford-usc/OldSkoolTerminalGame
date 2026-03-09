@@ -1,7 +1,7 @@
 {
   "workbench.startupEditor": "none",
+  "debug.openDebug": "neverOpen",
   "files.associations": {
     "*.h": "cpp"
   },
-  "terminal.integrated.defaultLocation": "editor"
 }
